@@ -11,7 +11,7 @@ void main()
 
 	if (dir == NULL)
 	{
-		printf("Failed to open directory");
+		printf("Failed to open directory\n");
 		return;
 	}
 

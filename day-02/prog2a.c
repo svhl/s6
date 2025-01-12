@@ -17,7 +17,7 @@ void main()
 
 	if (pid < 0)
 	{
-		printf("Fork failed");
+		printf("Fork failed\n");
 	}
 
 	else if (pid == 0)

@@ -3,7 +3,7 @@
 #include <unistd.h>
 #include <stdio.h>
 
-void main(char *argv[])
+void main(int argc, char *argv[])
 {
 	// O_RDONLY for read only
 	int src = open(argv[1], O_RDONLY);
@@ -14,6 +14,7 @@ void main(char *argv[])
 		return;
 	}
 
+	// argc is number of args passed
 	// argv is array of args passed
 	// O_WRONLY for write only
 	// O_CREAT for create if not exists

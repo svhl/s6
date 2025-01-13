@@ -8,6 +8,7 @@
 
 void main()
 {
+	// current working directory
 	char cwd[1024];
 	getcwd(cwd, sizeof(cwd));
 	printf("Current directory: %s\n", cwd);

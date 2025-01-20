@@ -1,4 +1,4 @@
-// client for TCP
+// server for TCP
 
 #include <stdio.h>
 #include <stdlib.h>
@@ -66,7 +66,11 @@ void main() {
 	// add eol
 	buffer[received] = '\0';
 	printf("Received from client: %s\n", buffer);
-	send(client_sock, buffer, received, 0);
+	
+	printf("Enter a message: ");
+	gets(buffer);
+	// 0 means no special flag parameters
+	send(client_sock, buffer, strlen(buffer), 0);
 
 	close(client_sock);
 	close(server_sock);

@@ -1,4 +1,4 @@
-// server for TCP
+// client for TCP
 
 #include <stdio.h>
 #include <stdlib.h>
@@ -54,7 +54,7 @@ void main()
 	int received = recv(client_sock, buffer, sizeof(buffer), 0);
 	// add eol
 	buffer[received] = '\0';
-	printf("Server replied: %s\n", buffer);
+	printf("Received from server: %s\n", buffer);
 
 	close(client_sock);
 }

@@ -8,9 +8,6 @@
 // for network functions
 #include <arpa/inet.h>
 
-#define SERVER_IP "127.0.0.1"
-#define PORT 8080
-
 void main()
 {
 	int client_sock;
@@ -33,15 +30,15 @@ void main()
 	server_addr.sin_family = AF_INET;
 	// sin_port to set port number
 	// htons to make port number big endian
-	server_addr.sin_port = htons(PORT);
+	server_addr.sin_port = htons(8080);
 	// convert IP address from string to binary
-	inet_pton(AF_INET, SERVER_IP, &server_addr.sin_addr);
+	inet_pton(AF_INET, "127.0.0.1", &server_addr.sin_addr);
 
 	// server_addr is of type sockaddr_in
 	// so we type cast to sockaddr
 	// also we need pointer not the struct to server_addr
 	// server_len because expects int
-	if (connect(client_sock, (struct sockaddr *)&server_addr, sizeof(server_addr)) == -1)
+	if (connect(client_sock, (struct sockaddr *)&server_addr, server_len) == -1)
 	{
 		printf("Connect failed\n");
 	}

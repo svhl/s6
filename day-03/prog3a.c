@@ -8,7 +8,8 @@
 // for network functions
 #include <arpa/inet.h>
 
-void main() {
+void main()
+{
 	int server_sock, client_sock;
 	// no need to define struct as already defined by <arpa/inet.h>
 	struct sockaddr_in server_addr, client_addr;

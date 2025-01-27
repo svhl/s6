@@ -49,7 +49,7 @@ void main()
 	}
 
 	// 1 means only 1 client at a time
-	listen(server_sock, 5);
+	listen(server_sock, 1);
 	printf("Server is listening on port %d...\n", 8080);
 
 	// &client_len because expects pointer

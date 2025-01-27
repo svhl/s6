@@ -23,6 +23,7 @@ void main()
 	if (client_sock == -1)
 	{
 		printf("Socket failed\n");
+		return;
 	}
 
 	// sin_family is address family (here IPv4)
@@ -40,6 +41,7 @@ void main()
 	if (connect(client_sock, (struct sockaddr *)&server_addr, server_len) == -1)
 	{
 		printf("Connect failed\n");
+		return;
 	}
 
 	char buffer[1024];

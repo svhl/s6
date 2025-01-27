@@ -15,7 +15,6 @@ void main()
 	struct sockaddr_in server_addr;
 	// datatype for size of socket address structure
 	socklen_t server_len = sizeof(server_addr);
-	char buffer[1024];
 
 	// AF_INET for IPv4 address
 	// SOCK_STREAM for TCP
@@ -43,6 +42,7 @@ void main()
 		printf("Connect failed\n");
 	}
 
+	char buffer[1024];
 	printf("Enter a message: ");
 	gets(buffer);
 	// 0 means no special flag parameters

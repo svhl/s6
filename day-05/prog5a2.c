@@ -63,7 +63,7 @@ void main()
 		{
 			snprintf(buffer, sizeof(buffer), "%c", lastsent);
 			send(client_sock, buffer, strlen(buffer), 0);
-			printf("Sent %s\n", buffer);
+			printf("Sending %s\n", buffer);
 		}
 
 		while (1)

@@ -10,7 +10,8 @@ Make changes to comments, file names, etc. if you're gonna use these.
 | [2](https://github.com/svhl/s6/tree/main/day-02)          | 06 Jan '25| System calls                          |
 | [3](https://github.com/svhl/s6/tree/main/day-03)          | 13 Jan '25| Client-server communication using TCP |
 | [4](https://github.com/svhl/s6/tree/main/day-04)          | 27 Jan '25| Client-server communication using UDP |
-| [5](https://github.com/svhl/s6/tree/main/day-05)          | 03 Feb '25| Stop-and-Wait ARQ Protocol            |
+| [5](https://github.com/svhl/s6/tree/main/day-05)          | 03 Feb '25| Sliding window protocols              |
+| [6](https://github.com/svhl/s6/tree/main/day-06)          | 17 Mar '25| Distance vector routing               |
 
 ## How to use
 
